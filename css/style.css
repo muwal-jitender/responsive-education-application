@@ -287,3 +287,47 @@ nav {
 .faq.open p {
   display: block;
 }
+
+/*---------- Testimonial SECTION ----------*/
+.testimonials__container {
+  overflow-y: hidden;
+  position: relative;
+  margin-bottom: 8rem;
+}
+.testimonial {
+  padding-top: 3.2rem;
+}
+.avatar {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1.6rem solid var(--color-bg1);
+}
+.testimonial__info {
+  text-align: center;
+}
+.testimonial__body {
+  background: var(--color-primary);
+  padding: 3.2rem;
+  margin-top: 4.8rem;
+  position: relative;
+}
+.testimonial__body::before {
+  content: "";
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+  height: 4.8rem;
+  width: 4.8rem;
+  display: block;
+  position: absolute;
+  top: -2.4rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}

@@ -13,6 +13,9 @@
   <!-- GOOGLE ICONS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+  <!-- SWIPER  JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -249,7 +252,99 @@
       </article>
     </div>
   </section>
+
+  <!---------- Testimonials SECTION ----------->
+  <section class="testimonails">
+    <h2>Student's Testimonials</h2>
+    <div class="container testimonials__container swiper mySwiper">
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar1.jpg" alt="First Avatar image" srcset="">
+          </div>
+          <div class="testimonial__info">
+            <h5>Jane Muller</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, est consequatur asperiores eum molestias rerum dolore id, dolorum atque laborum, architecto in pariatur. Vitae accusamus dolore quam sapiente, eos magnam!</p>
+          </div>
+        </article>
+
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar2.jpg" alt="Second Avatar image" srcset="">
+          </div>
+          <div class="testimonial__info">
+            <h5>David Miller</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, est consequatur asperiores eum molestias rerum dolore id, dolorum atque laborum, architecto in pariatur. Vitae accusamus dolore quam sapiente, eos magnam!</p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar3.jpg" alt="Third Avatar image" srcset="">
+          </div>
+          <div class="testimonial__info">
+            <h5>Kevin Muller</h5>
+            <small>Software Developer</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, est consequatur asperiores eum molestias rerum dolore id, dolorum atque laborum, architecto in pariatur. Vitae accusamus dolore quam sapiente, eos magnam!</p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar4.jpg" alt="Forth Avatar image" srcset="">
+          </div>
+          <div class="testimonial__info">
+            <h5>Sajia Hassan</h5>
+            <small>Web Designer</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, est consequatur asperiores eum molestias rerum dolore id, dolorum atque laborum, architecto in pariatur. Vitae accusamus dolore quam sapiente, eos magnam!</p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar5.jpg" alt="Fifth Avatar image" srcset="">
+          </div>
+          <div class="testimonial__info">
+            <h5>Neha Dhiman</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, est consequatur asperiores eum molestias rerum dolore id, dolorum atque laborum, architecto in pariatur. Vitae accusamus dolore quam sapiente, eos magnam!</p>
+          </div>
+        </article>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // When window is >=600px
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
