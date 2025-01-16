@@ -331,3 +331,6 @@ nav {
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
 }
+.swiper-wrapper {
+  margin-top: 5rem;
+}
