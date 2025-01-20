@@ -461,4 +461,24 @@ nav {
     background: var(--color-bg2);
     color: var(--color-white);
   }
+  /* --------- HEADER -----------*/
+  .hero {
+    height: 50vh;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+  .hero__container {
+    gap: 0;
+  }
+  /* --------- CATEGORY -----------*/
+  .categories {
+    height: auto;
+  }
+  .categories__container {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+  .categories__left {
+    margin-right: 0;
+  }
 }
