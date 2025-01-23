@@ -28,7 +28,7 @@
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
-  --container-width-sm: 99%;
+  --container-width-sm: 94%;
 
   --transition: all 400ms ease;
 }
@@ -499,5 +499,77 @@ nav {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
+  }
+}
+
+/*---------- MEDIA QUERIES (PHONES) ----------*/
+
+@media (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  /* --------- NAVBAR -----------*/
+  .nav__menu {
+    right: 3%;
+  }
+
+  /* --------- HERO -----------*/
+  .hero {
+    height: 100vh;
+  }
+  .hero__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+    gap: 4rem;
+  }
+  .hero__left p {
+    margin-bottom: 1.6rem;
+  }
+  /* --------- CATEGORIES -----------*/
+  .categories {
+    padding: 3.6rem 0;
+  }
+  .categories h1 {
+    margin-bottom: 2.8rem;
+  }
+  .categories__left p {
+    margin: 0 0 2.8rem;
+  }
+  .categories__right {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .category {
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+  }
+  .category__icon {
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  /* --------- COURSES -----------*/
+  .courses__container {
+    grid-template-columns: 1fr;
+  }
+  .courses {
+    padding: 6.6rem 0;
+  }
+  /* --------- TESTIMONIAL -----------*/
+  .testimonial__body {
+    padding: 1.8rem;
+  }
+  /* --------- FOOTER -----------*/
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-area: 2.8rem;
+  }
+  .footer__1 p {
+    margin: 0;
+  }
+  .footer__socials {
+    justify-content: center;
   }
 }
