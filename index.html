@@ -25,26 +25,10 @@
 </head>
 
 <body>
-  <!---------- NAVBAR SECTION ----------->
-  <nav>
-    <div class="container nav__container">
-      <a href="index.html">
-        <h4><span class="academy-name"> Kumar</span> Academy</h4>
-      </a>
-      <ul class="nav__menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button id="open-menu-btn">
-        <span class="material-symbols-outlined"> menu </span>
-      </button>
-      <button id="close-menu-btn">
-        <span class="material-symbols-outlined"> close </span>
-      </button>
-    </div>
-  </nav>
+  <!---------- INJECT NAVBAR SECTION ----------->
+  <div id="header">
+
+  </div>
   <!---------- HERO SECTION ----------->
   <section class="hero">
     <div class="container hero__container">
@@ -335,69 +319,13 @@
 
     </div>
   </section>
-  <!---------- FOOTER SECTION ----------->
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__1">
-        <h4><span class="academy-name"> Kumar</span> Academy</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At consequatur fugit aut.</p>
-      </div>
-      <div class="footer__2">
-        <h4>Permalinks</h4>
-        <ul class="permalinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__3">
-        <h4>Privacy</h4>
-        <ul class="permalinks">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms and conditions</a></li>
-          <li><a href="#">Refund Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer__4">
-        <h4>Conact Us</h4>
-        <div class="contact">
-          <p>+49 69 1234 5678</p>
-          <p>muwal.jitender@gmail.com</p>
-        </div>
-        <ul class="footer__socials">
-          <li>
-            <a href="#" class="fa fa-facebook"></a>
-          </li>
-          <li><a href="#" class="fa fa-twitter"></a></li>
-          <li><a href="#" class="fa fa-instagram"></a></li>
-          <li><a href="#" class="fa fa-linkedin"></a></li>
-        </ul>
-      </div>
+  <!---------- INJECT FOOTER SECTION ----------->
+  <div id="footer">
 
-    </div>
-    <div class="footer__copyright">
-      <small>Copyright &copy; Muwal Academy</small>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </div>
+
   <script src="./main.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // When window is >=600px
-      breakpoints: {
-        600: {
-          slidesPerView: 2,
-        }
-      }
-    });
-  </script>
+
 </body>
 
 </html>

@@ -1,4 +1,14 @@
-// change navbar styles on scroll
+// Add header layout
+fetch("header.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("header").innerHTML = data));
+
+// Add footer layout
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("footer").innerHTML = data));
+
+// Change navbar styles on scroll
 window.addEventListener("scroll", () => {
   document
     .querySelector("nav")
@@ -6,7 +16,6 @@ window.addEventListener("scroll", () => {
 });
 
 // Show/Hide faq answer
-
 const faqs = document.querySelectorAll(".faq");
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
@@ -18,7 +27,6 @@ faqs.forEach((faq) => {
 });
 
 // Show/Hide NAV Menu on smaller screen
-
 const navMenu = document.querySelector(".nav__menu");
 const openNavMenuBtn = document.querySelector("#open-menu-btn");
 const closeNavMenuBtn = document.querySelector("#close-menu-btn");
