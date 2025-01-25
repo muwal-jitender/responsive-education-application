@@ -147,7 +147,7 @@ nav {
 .hero {
   position: relative;
   top: 8rem;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
   margin-bottom: 8rem;
 }
@@ -238,19 +238,27 @@ nav {
   background: var(--color-bg1);
   text-align: center;
   border: 1px solid transparent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .course:hover {
   background: transparent;
   border-color: var(--color-primary);
 }
 .course__info {
-  padding: 3.2rem;
+  margin-top: 1rem;
+  padding: 0 3.2rem;
 }
 .course__info p {
   margin: 1.6rem 0 3.2rem;
   font-size: 1.2rem;
 }
-
+.learn-more {
+  margin-bottom: 1.6rem;
+}
 /*---------- FAQs SECTION ----------*/
 
 .faqs {
