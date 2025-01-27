@@ -1,5 +1,5 @@
 .contact-us {
-  margin-top: 22.4rem;
+  margin: 22.4rem 0;
 }
 /* --------- ASIDE SECTION ----------- */
 .contact__container {
@@ -83,6 +83,9 @@ textarea {
 
 /* --------- MEDIA QUERIES (TABLETS) ----------- */
 @media screen and (max-width: 1024px) {
+  .contact-us {
+    margin: 18rem 0 4.4rem 8.4rem;
+  }
   .contact__container {
     grid-template-columns: 40% 60%;
     gap: 3rem;
